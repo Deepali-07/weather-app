@@ -11,11 +11,6 @@ It shows real-time weather information for any city, with a clean UI, gradient b
 ✅ Beautiful responsive UI with gradients and shadows  
 ✅ Simple Flask backend connected to OpenWeatherMap API  
 
-## 🖼️ Preview
-
-![Weather App Screenshot](https://user-images.githubusercontent.com/YOUR_GITHUB_USERNAME/placeholder.png)  
-*(Add your own screenshot here later!)*
-
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Clone this repository
