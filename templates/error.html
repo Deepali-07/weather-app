@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error - Weather App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="weather-container">
+        <h2>⚠️ Oops! Something went wrong.</h2>
+        <p>{{ message }}</p>
+        <a href="/" style="color:#ffca28; text-decoration:none;">← Back to Home</a>
+    </div>
+</body>
+</html>

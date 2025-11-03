@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{city}} Weather</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Weather in {{city}}, {{country}}</h1>
+            <div class = "weather-card">
+                <img src="{{icon}}" alt = "Weather Icon">
+                <h2>{{temp}}°C</h2>
+                <p>{{condition}}</p>
+                <p>Humidity: {{humidity}}%</p>
+                <p>Wind: {{wind}} km/h</p>
+            </div>
+            <a href="/">Search Again</a>
+        </div>
+    </body>
+</html>
