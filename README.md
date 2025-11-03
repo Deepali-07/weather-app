@@ -1,103 +1,136 @@
 # 🌦️ Flask Weather App
 
 A simple and elegant **Weather App** built with **Python (Flask)** and the **OpenWeatherMap API**.  
-It shows real-time weather information for any city, with a clean UI, gradient backgrounds, and error handling.
+It displays real-time weather details for any city in the world — with a clean, responsive interface and proper error handling.
+
+---
 
 ## 🚀 Features
 
-✅ Search weather by city name  
-✅ Displays temperature, weather description, and icons  
-✅ Error handling for invalid cities or API failures  
-✅ Beautiful responsive UI with gradients and shadows  
-✅ Simple Flask backend connected to OpenWeatherMap API  
+- 🔍 Search weather by city name  
+- 🌡️ Displays temperature, description, humidity, and weather icon  
+- ⚠️ Handles errors for invalid city names or API issues  
+- 🎨 Beautiful responsive design with gradient backgrounds  
+- ⚙️ Flask backend connected to the OpenWeatherMap API  
+
+---
 
 ## ⚙️ Setup Instructions
 
-### 1️⃣ Clone this repository
+### 🧩 Step 1: Clone this repository
 ```bash
 git clone https://github.com/Deepali-07/weather-app.git
 cd weather-app
-2️⃣ Create a virtual environment (recommended)
-bash
-Copy code
+````
+
+### 🧩 Step 2: Create a virtual environment
+
+```bash
 python -m venv env
+```
+
 Activate it:
+**Windows**
 
-On Windows:
-
-bash
-Copy code
+```bash
 env\Scripts\activate
-On Mac/Linux:
+```
 
-bash
-Copy code
+**Mac/Linux**
+
+```bash
 source env/bin/activate
-3️⃣ Install dependencies
-bash
-Copy code
+```
+
+### 🧩 Step 3: Install dependencies
+
+```bash
 pip install flask requests
-4️⃣ Get your OpenWeatherMap API Key
-Go to https://openweathermap.org/api
+```
 
-Sign up (free)
+### 🧩 Step 4: Get your OpenWeatherMap API Key
 
-Copy your API Key
+1. Go to [OpenWeatherMap API](https://openweathermap.org/api)
+2. Sign up for a free account
+3. Copy your API key
+4. Open `app.py` and replace:
 
-Open app.py and replace:
+   ```python
+   API_KEY = "YOUR_OPENWEATHERMAP_API_KEY"
+   ```
 
-python
-Copy code
-API_KEY = "YOUR_OPENWEATHERMAP_API_KEY"
-with your actual key.
+   with your actual key.
 
-5️⃣ Run the app
-bash
-Copy code
+### 🧩 Step 5: Run the app
+
+```bash
 python app.py
-Then open your browser and visit:
-👉 http://localhost:5000
+```
 
-🧩 Project Structure
-csharp
-Copy code
+Then open your browser and visit:
+👉 [http://localhost:5000](http://localhost:5000)
+
+---
+
+## 📂 Project Structure
+
+```
 weather-app/
 │
-├── app.py                  # Main Flask backend
+├── app.py                  # Flask backend
 ├── static/
-│   └── style.css           # Frontend styles (gradients, shadows)
+│   └── style.css           # Styling for frontend
 ├── templates/
-│   ├── index.html          # Main page template
-│   └── error.html          # Error handling template
+│   ├── index.html          # Main weather page
+│   └── error.html          # Error page for invalid input
 ├── .gitignore
 └── README.md
-💡 How It Works
-User enters a city name in the search box
+```
 
-Flask calls the OpenWeatherMap API with the city
+---
 
-Weather data (temperature, description, icon) is fetched in JSON
+## 💡 How It Works
 
-Displayed beautifully on the web page
+1. User enters a city name in the search box
+2. Flask sends a request to the **OpenWeatherMap API**
+3. The API returns weather data in JSON format
+4. Flask renders it in the frontend beautifully using HTML and CSS
 
-🪲 Common Issues
-Problem	Solution
-❌ "Invalid API Key"	Ensure you replaced YOUR_OPENWEATHERMAP_API_KEY correctly
-🌐 "Connection Error"	Check your internet connection or API URL
-🏙️ "City Not Found"	Try a valid city name like London, Hyderabad, New York
+---
 
-🧰 Tech Stack
-Backend: Flask (Python)
+## 🪲 Common Issues & Fixes
 
-Frontend: HTML, CSS
+| Issue                   | Cause                 | Solution                                                 |
+| ----------------------- | --------------------- | -------------------------------------------------------- |
+| ❌ Invalid API Key       | Wrong or missing key  | Check and update your API key in `app.py`                |
+| 🌐 API Connection Error | Internet or URL issue | Verify internet and API URL                              |
+| 🏙️ City Not Found      | Wrong spelling        | Try another city name like `London`, `Delhi`, or `Paris` |
 
-API: OpenWeatherMap
+---
 
-Version Control: Git & GitHub
+## 🧰 Tech Stack
 
-🧑‍💻 Author
-👩‍💻 Deepali Madala
-📧 deepalimadala@gmail.com
+* **Backend:** Python (Flask)
+* **Frontend:** HTML, CSS
+* **API:** OpenWeatherMap
+* **Version Control:** Git & GitHub
 
-🪄 License
-This project is open-source and available under the MIT License.
+---
+
+## 🧑‍💻 Author
+
+**👩‍💻 Deepali Madala**
+📧 deepalimadala@gmailcom
+🔗 [GitHub Profile](https://github.com/Deepali-07)
+
+---
+
+## 🪄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+⭐ **If you found this project helpful, please give it a star on GitHub!**
+
+```
